@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celebration</title>
+  <link rel="stylesheet" href="src/css/winning.css">
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <span></span>
+    </div>
+    <div class="img">
+      <img src="src/assets/gifs/won.gif" alt="Winner!">
+    </div>
+
+    <button class="go-back" onclick="
+    window.location.href = '../';
+    ">Go back to Game board</button>
+  </div>
+
+  <div class="author">
+    <span>Made by <span class="name">Madhan M</span> <br> with <span class="heart">&#10084;</span></span>
+  </div>
+
+
+  <script type="text/javascript">
+
+    const heading = document.querySelector('.heading span');
+    const winner = (localStorage.getItem("winner") == 1) ? "X": "O";
+    console.log(winner);
+    heading.innerText = `Player '${winner.toUpperCase()}' won the game!`;
+
+  </script>
+
+</body>
+</html>

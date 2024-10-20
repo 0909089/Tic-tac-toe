@@ -1,0 +1,42 @@
+@import "base.css";
+@import "author.css";
+body {
+  /* background-image:url("../assets/gifs/bg2.gif");
+  background-repeat: no-repeat;
+  background-size:cover; */
+  width:100%;
+  height:100vh;
+  position: relative;
+  background:white;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.heading {
+  font-size:5rem;
+}
+
+button {
+  padding:0.8rem 2.5rem;
+  outline:none;
+  border: 2px solid black;
+  background:transparent;
+  font-size:1.2rem;
+  margin-top:5rem;
+}
+button:hover {
+  background:black;
+  color:white;
+  transition: 0.3s ease-in-out linear all;
+  cursor: pointer;
+}
+.author {
+  color:black;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="src/assets/favicon.ico" type="image/x-icon">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="src/css/styles.css" type="text/css">
+</head>
+<body>
+  <div id="root">
+
+    <header>
+      <div class="score-board wrapper">
+        <div class="player-1-score score">
+          <span>Player X</span><br>
+          <span class="score"></span>
+        </div>
+        <span class="whom-turn"></span>
+        <div class="player-2-score score">
+          <span>Player O</span><br>
+          <span class="score"></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="game-container">
+      <div class="game-board">
+      </div>
+      <button class="new-game" onclick="newGame()">New Game</button>
+    </div>
+
+    <div class="gif-container"></div>
+  </div>
+
+  <div class="draw-game">
+    <h1>Draw game!</h1>
+  </div>
+
+  <div class="author">
+    <span>Made by <span class="name">Madhan M</span> <br> with <span class="heart">&#10084;</span></span>
+  </div>
+
+  <script type="text/javascript" src="src/js/main.js"></script>
+
+</body>
+</html>
