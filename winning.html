@@ -17,7 +17,20 @@
 
     <button class="go-back" onclick="
 
-    window.location.href = '/index.html';
+    // window.location.href = '/index.html';
+    console.log(window.location.host);
+    console.log(window.location.hostname);
+
+    const variables = [window.location.host, 'Tic-tac-toe', window.location.pathname.split('/')[1]];
+
+    let path = variables.join('/');
+
+    let attr = path.split('/');
+    attr[attr.length - 1] = 'index.html';
+
+    path = attr.join('/');
+
+    window.location.href = path;
 
     ">Go back to Game board</button>
   </div>
